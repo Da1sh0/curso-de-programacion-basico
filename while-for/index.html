@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canva while-for</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-center my-4">
+        <h1 class="text-info">Dibujo en canva</h1>
+      </div>
+      <div class="row mb-3">
+        <div class="col"></div>
+        <div class="col central-container p-4 border border-info">
+          <div class="mb-3">
+            <label for="input-lines-one" class="form-label">
+              Líneas primer dibujo
+            </label>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <input
+                  type="number"
+                  class="form-control input-lines-width"
+                  id="input-lines-one"
+                />
+                <div class="d-flex">
+                  <label class="me-2">Color:</label>
+                  <input type="color" id="input-color-one" value="#ffa500" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="input-lines-two" class="form-label">
+              Líneas segundo dibujo
+            </label>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <input
+                  type="number"
+                  class="form-control input-lines-width"
+                  id="input-lines-two"
+                />
+                <div class="d-flex">
+                  <label class="me-2">Color:</label>
+                  <input type="color" id="input-color-two" value="#094293" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            id="btn-generate"
+            onclick="drawingWhile(); drawingFor()"
+          >
+            Generar
+          </button>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row border border-info central-container p-4" id="canva-container">
+        <div class="col d-flex justify-content-center">
+          <canvas width="300" height="300" id="drawing-one"></canvas>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <canvas width="300" height="300" id="drawing-two"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="drawing.js"></script>
+  </body>
+</html>

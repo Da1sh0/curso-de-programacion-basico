@@ -1,0 +1,11 @@
+html body {
+  background-color: ghostwhite;
+}
+
+.central-container {
+  background-color: white;
+}
+
+.input-lines-width {
+  width: 50% !important;
+}

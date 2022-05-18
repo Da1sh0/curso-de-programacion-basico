@@ -1,0 +1,12 @@
+strong{
+	color: rgba(36, 176, 231, 0.904);
+	border-top:3px solid Tomato;
+	border-bottom:3px solid Tomato;
+}
+html{
+	background-color: ghostwhite;
+}
+strong:hover{
+	color: coral;
+	font-size: 50px;
+}

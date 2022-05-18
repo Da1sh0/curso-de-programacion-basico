@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> DIBUJANDO CON CANVAS </title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+	<h1>Dibujo en canva</h1>
+	<p>Cuantas lineas quieres?</p>
+	<input type="text" id="textonumero1" /> <strong> + </strong>
+	<input type="text" id="textonumero2"> <br>
+	<p>De que color lo quieres?</p>
+	<input type="color" id="colorsote" /> <br>
+	<br>
+	<p>Cuantas lineas quieres en el segundo dibujo</p>
+	<input type="text" id="segundotexto" /> <br>
+	<p>Elije el color del segundo dibujo</p>
+	<input type="color" id="segundocolor" /> <br>
+	<br>
+	<button type="button" id="botoon"> Dame Click </button> <br>
+	<br>
+	<div id="canvas-container">
+		<canvas width="500" height="500" id="dibujito"></canvas>
+		<canvas width="500" height="500" id="segundodibujo"></canvas>
+	</div>
+	<p> Asi queda tu dibujo </p>
+	<script src="dibujo.js"></script>
+</body>
+
+</html>

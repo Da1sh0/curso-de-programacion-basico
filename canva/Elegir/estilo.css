@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(243, 223, 199);
+}
+#canvas-container{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+input{
+    width: 30px;
+}
